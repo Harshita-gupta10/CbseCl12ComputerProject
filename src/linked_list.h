@@ -60,14 +60,26 @@ public:
 	}
 
 
-	void del(int index){
+	T del(int index){
 		Node<T> *var = head;
 		if(index < 0 || index > size){
 			cout << "An error occurred: Specified index does not correspond to any value in the list!" << endl;
-			return;
+			return NULL;
 		}
 		if(index == 0){
+			T del = head->value;
 			head = head->next;
+			size--;
+			return del;
+		}
+		if(index == size - 1){
+			for(int i = 1; i < size - 1; i++){
+				var = var->next;
+			}
+			T del = (var->next)->value;
+			var->next = NULL;
+			size--;
+			return del;
 		}
 		for(int i = 1; i < index; i++){
 			var = var->next;
@@ -75,6 +87,15 @@ public:
 		Node<T> *del = var->next;
 		var->next = del->next;
 		size--;
+		return del->value;
+	}
+
+	T get_head(){
+		return head->value;
+	}
+
+	int get_size(){
+		return size;
 	}
 
 };
