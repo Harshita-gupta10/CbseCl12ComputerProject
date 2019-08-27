@@ -78,13 +78,3 @@ public:
 	}
 
 };
-
-int main(){
-	LinkedList<int> list;
-	list.add(20);
-	list.add(59);
-	list.add(12);
-	list.add(15);
-	list.del(0);
-	cout << list.get(0) << "  " << list.get(1) << "  " << list.get(2) <<  endl;
-}
