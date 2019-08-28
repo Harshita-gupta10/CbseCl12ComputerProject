@@ -15,6 +15,7 @@ programs as stand-alone versions.
 * _`Queue using array`_
 * Searching Algorithms: _`Binary Search`_ and _`Linear Search`_
 * Sorting Algorithms: _`Bubble Sort`_, _`Selection Sort`_ and _`Insertion Sort`_
+
 *There's more to come. I'll be pushing the second term board exam programs too!*
 
 
