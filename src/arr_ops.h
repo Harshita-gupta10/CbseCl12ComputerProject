@@ -6,3 +6,5 @@ int binary_search(int arr[], int size, int key);
 int linear_search(int arr[], int size, int key);
 
 void print_array(int arr[], int size);
+
+void reverse_array(int arr[], int size);
